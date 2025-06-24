@@ -1,0 +1,60 @@
+:root {
+    --todo-bg: #ffffff;
+    --todo-colortitle:red;
+    --todo-border: #ff0000;
+    --todo-accent: #1a8917;
+    --todo-text: #333;
+    --todo-radius: 6px;
+    --todo-spacing: 12px;
+    --todo-font: Arial, sans-serif;
+}
+
+/* Contenedor principal de la lista */
+.todo {
+    background-color: var(--todo-bg);
+    border: 1px solid var(--todo-border);
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: var(--todo-radius);
+    font-family: var(--todo-font);
+}
+
+/* Título de la lista */
+.todo__title {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+    color: var(--todo-colortitle);
+}
+
+/* Lista de tareas */
+.todo__list {
+  list-style: none; /* Quitamos los puntos */
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada tarea individual */
+.todo__item {
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--todo-border);
+    padding-bottom: 8px;
+}
+
+/* Checkbox de cada tarea */
+.todo__checkbox {
+    margin-right: 8px;
+}
+
+/* Texto de la tarea */
+.todo__label {
+    color: var(--todo-text);
+    cursor: pointer;
+}
+
+/* Estilo cuando está marcada */
+.todo__checkbox:checked + .todo__label {
+    text-decoration: line-through;
+    color: var(--todo-accent);
+}
