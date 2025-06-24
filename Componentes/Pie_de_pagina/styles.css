@@ -1,0 +1,62 @@
+:root {
+    --footer-bg: #1a1a1a;
+    --footer-text: #eeeeee;
+    --footer-link: #ffffff;
+    --footer-link-hover: #1a8917;
+    --footer-padding: 20px;
+    --footer-font: Arial, sans-serif;
+}
+
+/* Contenedor general del footer */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: var(--footer-padding);
+    font-family: var(--footer-font);
+    text-align: center;
+}
+
+/* Cada sección del footer */
+.footer__section {
+    margin-bottom: 20px;
+}
+
+/* Títulos y subtítulos */
+.footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.footer__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+/* Texto informativo */
+.footer__text {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Listado de enlaces */
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada ítem de lista */
+.footer__item {
+    margin-bottom: 4px;
+}
+
+/* Enlaces del footer */
+.footer__link {
+    text-decoration: none;
+    color: var(--footer-link);
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: var(--footer-link-hover);
+}
