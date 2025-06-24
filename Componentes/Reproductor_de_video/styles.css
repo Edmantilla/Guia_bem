@@ -1,0 +1,39 @@
+:root {
+    --video-bg: #f9f9f9;
+    --video-text: #222;
+    --video-radius: 8px;
+    --video-font: Arial, sans-serif;
+}
+
+.video-player {
+    background-color: var(--video-bg);
+    padding: 16px;
+    border: 1px solid #ddd;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: var(--video-radius);
+    font-family: var(--video-font);
+    text-align: center;
+}
+
+.video-player__video {
+    width: 100%;
+    height: auto;
+    border-radius: var(--video-radius);
+    background-color: black;
+}
+
+.video-player__info {
+    margin-top: 12px;
+}
+
+.video-player__title {
+    font-size: 1.2rem;
+    color: var(--video-text);
+    margin-bottom: 4px;
+}
+
+.video-player__description {
+    font-size: 0.95rem;
+    color: #555;
+}
