@@ -1,0 +1,44 @@
+:root {
+    --select-font: Arial, sans-serif;
+    --select-bg: #ffffff;
+    --select-border: #ccc;
+    --select-text: #333;
+    --select-radius: 6px;
+    --select-padding: 10px;
+    --select-focus: #1a8917;
+}
+
+.category-selector {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: var(--select-font);
+    }
+
+.category-selector__label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--select-text);
+    font-weight: bold;
+}
+
+.category-selector__select {
+    width: 100%;
+    padding: var(--select-padding);
+    border: 1px solid var(--select-border);
+    border-radius: var(--select-radius);
+    background-color: var(--select-bg);
+    color: var(--select-text);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo al enfocar */
+.category-selector__select:focus {
+    border-color: var(--select-focus);
+    outline: none;
+}
+
+/* Opciones individuales */
+.category-selector__option {
+    color: var(--select-text);
+}
