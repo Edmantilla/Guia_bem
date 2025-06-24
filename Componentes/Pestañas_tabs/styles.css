@@ -1,0 +1,56 @@
+:root {
+    --tabs-border: #ccc;
+    --tabs-accent: #1a8917;
+    --tabs-bg: #f9f9f9;
+    --tabs-font: Arial, sans-serif;
+    --tabs-radius: 6px;
+}
+
+/* Contenedor general */
+.tabs {
+    font-family: var(--tabs-font);
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--tabs-bg);
+    border: 1px solid var(--tabs-border);
+    border-radius: var(--tabs-radius);
+}
+
+/* Navegación de pestañas */
+.tabs__nav {
+    text-align: center;
+    border-bottom: 1px solid var(--tabs-border);
+    }
+
+/* Botones de las pestañas */
+.tabs__button {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 3px solid transparent;
+    }
+
+/* Pestaña activa */
+.tabs__button--active {
+    color: var(--tabs-accent);
+    border-bottom-color: var(--tabs-accent);
+    font-weight: bold;
+}
+
+/* Contenedor del contenido */
+.tabs__content {
+    padding: 20px;
+}
+
+/* Panel individual (por defecto oculto) */
+.tabs__panel {
+    display: none;
+}
+
+/* Panel activo visible */
+.tabs__panel--active {
+    display: block;
+}
