@@ -1,0 +1,50 @@
+:root {
+    --gallery-bg: #fff;
+    --gallery-text: #ff0000;
+    --gallery-gap: 12px;
+    --gallery-radius: 8px;
+    --gallery-shadow: 0 8px 6px rgba(255, 0, 0, 0.1);
+    --gallery-font: Arial, sans-serif;
+    --color-borde:red;
+}
+
+/* Contenedor general de la galería */
+.gallery {
+    background-color: var(--gallery-bg);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: var(--gallery-font);
+}
+
+/* Título de la galería */
+.gallery__title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--gallery-text);
+}
+
+/* Contenedor interno que agrupa las imágenes */
+.gallery__container {
+  text-align: center; /* Centra los elementos en línea */
+}
+
+/* Cada item de imagen */
+.gallery__item {
+    display: inline-block; 
+    margin: var(--gallery-gap);
+    vertical-align: top;
+    border-radius: var(--gallery-radius);
+    overflow: hidden;
+    box-shadow: var(--gallery-shadow);
+    background-color: #f3f3f3;
+}
+
+/* Imagen dentro del item */
+.gallery__image {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    object-fit: contain;
+}
