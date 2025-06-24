@@ -1,0 +1,58 @@
+:root {
+    --alert-padding: 16px;
+    --alert-radius: 6px;
+    --alert-font: Arial, sans-serif;
+    /* Colores por tipo de alerta */
+    --alert-success-bg: #d4edda;
+    --alert-success-text: #155724;
+    --alert-error-bg: #f8d7da;
+    --alert-error-text: #721c24;
+    --alert-info-bg: #d1ecf1;
+    --alert-info-text: #0c5460;
+    --alert-border: #ccc;
+}
+
+/* Contenedor base de cualquier alerta */
+.alert {
+    position: relative;
+    border: 1px solid var(--alert-border);
+    padding: var(--alert-padding);
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: var(--alert-radius);
+    font-family: var(--alert-font);
+}
+
+/* Texto de la alerta */
+.alert__message {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Botón para cerrar */
+.alert__close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Tipos de alerta como modificadores */
+.alert--success {
+    background-color: var(--alert-success-bg);
+    color: var(--alert-success-text);
+    }
+
+.alert--error {
+    background-color: var(--alert-error-bg);
+    color: var(--alert-error-text);
+}
+
+.alert--info {
+    background-color: var(--alert-info-bg);
+    color: var(--alert-info-text);
+}
